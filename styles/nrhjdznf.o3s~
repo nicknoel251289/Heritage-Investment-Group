@@ -1,0 +1,53 @@
+﻿/* 
+  
+   light-green: #7ed56f;
+   med-green: #55c57a;
+   dark-green: #28b485;
+    
+*/
+
+/* normalize */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+        /*Change box model so the border and padding are not
+        added to the total width/height specified for the box
+        but rather calculated into the box w/out changing its
+        width/height*/
+}
+
+body {
+    font-family: "Lato", sans-serif;
+        /* Should always specify this in the body and not in
+        the universal selector*/
+    font-weight: 16px;
+    line-height: 1.7;
+    color: #777777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh; /*the box should be 95% of viewports height*/
+    background-image: linear-gradient(
+        to right bottom, rgba(126, 213, 111, 0.8), 
+        rgba(40, 180, 131, 0.8)), 
+        url("../img/hero.jpg")
+    ;
+    background-size: cover; /*w.e the width of the element, you will try to fit it inside the current box*/
+    background-position: top; /*always stays at the top of the box as aposed to bottom/center*/
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+        /*polygon(x y, x y, x y, x y) top-left, top-right, bottom-right, bottom-left | x = horizontal y = verticle*/
+    pos
+}
+
+.logo_box {
+    position: absolute; /*its reference point is the next parent element that has a positioning set to relative*/
+    top: 40px;
+    left: 40px;
+}
+
+.logo_box .logo {
+
+}
