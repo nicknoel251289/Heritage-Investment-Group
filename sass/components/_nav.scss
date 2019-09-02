@@ -1,0 +1,84 @@
+@import "../functionality/variables";
+
+.nav_container {
+    background-color: white;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: $max_width;
+    z-index: 1000;
+    margin: auto;
+
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+
+        & li {
+            list-style: none;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background: $secondary_color;
+            }
+
+            & a {
+                color: #555555;
+                height: $nav_height;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /*place-items: center;*/
+                text-decoration: none;
+                font-size: 1.6rem;
+            
+                &:hover {
+                    background: $secondary_color;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.nav_logo_container {
+    /*display: grid;*/
+    /* place-items: center; */
+    z-index: 1000;
+    height: $nav_height;
+}
+.nav_logo_container_logo {
+    height: 15rem;
+    bottom: 1.5rem;
+    position: relative;
+}
+.request {
+    position: relative;
+    top: 2.2rem;
+    min-width: 15rem;
+    margin-left: 3rem;
+}
+.address_bar_container {
+    width: 100vw;
+    height: 2.5rem;
+    background: #ff5657;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,0.12), 0 .1rem .2rem  rgba(0,0,0,0.24);
+
+    &_address_bar {
+        max-width: $max_width;
+        font-size: 1.4rem;
+        color: white;
+        margin: 0 auto;
+        position: relative;
+        top: .2rem;
+
+        & a {
+            color: white;
+        }
+    }
+}
