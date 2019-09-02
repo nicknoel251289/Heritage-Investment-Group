@@ -1,0 +1,22 @@
+{
+  "name": "heritage-investment-group",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/index_styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicknoel251289/Heritage-Investment-Group.git"
+  },
+  "author": "Nick Noel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicknoel251289/Heritage-Investment-Group/issues"
+  },
+  "homepage": "https://github.com/nicknoel251289/Heritage-Investment-Group#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
