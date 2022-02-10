@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/nicknoel251289/Heritage-Investment-Group#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   }
 }
